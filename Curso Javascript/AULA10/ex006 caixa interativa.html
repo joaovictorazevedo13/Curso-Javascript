@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Caixa Interativa</title>
+    <style>
+        div#area {
+            font: normal 20pt arial;
+            background: green;
+            color: white;
+            width: 200px;
+            height: 150px;
+            line-height: 150px;
+            text-align: center;
+            }
+    </style>    
+</head>
+<body>
+    <div id="area">
+        Interaja
+    </div>
+    <script>
+        var a = window.document.querySelector('div#area');
+        a.addEventListener('click', clicar)
+        a.addEventListener('mouseenter', entrar)
+        a.addEventListener('mouseout', sair)
+        
+
+        function clicar(){
+            a.innerHTML = 'Clicou Bastião!'
+            a.style.background = 'red'
+            a.style.color = 'black'
+        }
+        function entrar(){
+            a.innerHTML = 'Entrou Bastião!'
+            a.style.background = 'yellow'
+            a.style.color = 'black'
+        }
+        function sair(){
+            a.innerHTML = 'Saiu Bastião'
+            a.style.background = 'green'
+            a.style.color = 'white'
+        }
+    </script>
+</body>
+</html>
