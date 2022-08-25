@@ -34,14 +34,15 @@ main {
 }
 
 .sequencia {
+    color: rgb(0, 0, 0);
     display: inline-block;
-    max-width: 300px;
+    max-width: 240px;
     margin-left: 20px;
     margin-top: 10px;
     font-size: 1em;
     line-height: 20px;
     box-shadow: 2px 2px 10px black;
-    background-color: rgba(255, 255, 255, 0.261) ;
+    background-color: rgba(255, 255, 255, 0.6) ;
     
 }
 
