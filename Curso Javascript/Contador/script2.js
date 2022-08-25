@@ -1,7 +1,7 @@
 
 function limpar(){
     let contador = window.document.querySelector('div#cont')
-    contador.innerHTML = 'Sequência:<br/> '
+    contador.innerHTML = ''
 }
 
 function contar() {
